@@ -1,0 +1,282 @@
+:root {
+  font-family: "Noto Sans KR", system-ui, sans-serif;
+  color: #25352d;
+  background: #fff8f0;
+  font-synthesis: none;
+  line-height: 1.65;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  max-width: 1120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+header span {
+  margin-left: auto;
+  font-size: 14px;
+}
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #245c42;
+}
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 16px 24px 64px;
+}
+main.wide {
+  max-width: 1120px;
+}
+.heading {
+  margin: 28px 0 32px;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #64796a;
+}
+h1 {
+  font-size: 32px;
+  line-height: 1.35;
+  letter-spacing: -1.4px;
+  margin: 12px 0;
+}
+h2 {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 0 0 20px;
+}
+p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.heading p,
+.muted,
+small {
+  color: #69766e;
+}
+.card {
+  background: white;
+  border: 1px solid #e4e8de;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 16px #25352d05;
+}
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background: #fdfefa;
+  border: 1px solid #cbd4ca;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  min-width: 0;
+}
+textarea {
+  resize: vertical;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #b5d9ba;
+  outline-offset: 2px;
+}
+button {
+  font: inherit;
+  font-weight: 600;
+  border: 0;
+  background: #245c42;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  min-height: 44px;
+  cursor: pointer;
+}
+button.secondary {
+  color: #245c42;
+  background: #edf3e9;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+form > button {
+  width: 100%;
+}
+.card > button {
+  margin: 4px 8px 4px 0;
+}
+small {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.muted {
+  font-size: 13px;
+}
+.steps {
+  font-size: 12px;
+  padding: 14px;
+  background: #edf3e9;
+  border-radius: 12px;
+  color: #245c42;
+}
+.chosen {
+  font-size: 28px;
+  font-weight: 700;
+}
+.notice {
+  max-width: 1072px;
+  margin: 12px auto;
+  background: #e4efdf;
+  padding: 16px 24px;
+  border-radius: 12px;
+  position: sticky;
+  top: 8px;
+  z-index: 5;
+}
+.error {
+  color: #a72318;
+}
+.notice.error {
+  background: #fff0ed;
+}
+.pair {
+  margin-top: 16px;
+}
+.pair span {
+  font-size: 12px;
+  color: #69766e;
+}
+.pair p {
+  margin: 4px 0;
+}
+.reveal-name {
+  font-size: 42px;
+  margin-top: 16px;
+  color: #245c42;
+}
+.badge {
+  display: inline-block;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f0f2ed;
+}
+.CORRECT {
+  background: #e4efdf;
+  color: #245c42;
+}
+.INCORRECT {
+  background: #fff0d8;
+  color: #6a4914;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+.stat {
+  background: #edf3e9;
+  padding: 16px;
+  border-radius: 16px;
+}
+.stat span {
+  display: block;
+  font-size: 12px;
+}
+.stat strong {
+  font-size: 25px;
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.controls input {
+  margin: 0;
+}
+.controls select {
+  margin: 0;
+  max-width: 160px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr));
+  gap: 16px;
+}
+.grid .card {
+  margin: 0;
+}
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+footer {
+  text-align: center;
+  color: #8b958c;
+  font-size: 12px;
+  margin-top: 48px;
+}
+@media (max-width: 480px) {
+  header {
+    padding: 16px;
+    gap: 8px;
+  }
+  header span {
+    font-size: 12px;
+  }
+  header button {
+    font-size: 12px;
+    padding: 8px;
+  }
+  main {
+    padding: 8px 16px 40px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .controls {
+    flex-wrap: wrap;
+  }
+  .controls select {
+    max-width: 100%;
+  }
+  .notice {
+    margin: 8px 16px;
+  }
+}
